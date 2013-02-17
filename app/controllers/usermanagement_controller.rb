@@ -39,20 +39,6 @@ def params_set
        "ru","橡胶","v","聚氯乙烯","wr","线材","y","豆油","zn","锌"]
    @hash_tradechargetype=Hash[0,"每手",1,"成交金额比例"]
 
-    #xml读取操作
-   @doc = Document.new(File.new('app/assets/xmls/commodity.xml'))
-   @hash_exchtrademargin=Hash.new
-
-  @hash_commodityidxml=Hash.new
-  for i in 0..@usercommodity.size-1
-    @hash_commodityidxml.store(@doc.elements.to_a("//commodityid")[i].text,@doc.elements.to_a("//exchtrademargin")[i].text.to_d)
-  end
-
-   for i in 0..@usercommodity.size-1
-   @hash_exchtrademargin.store(@usercommodity[i].commodityid,@hash_commodityidxml[@usercommodity[i].commodityid]+@usercommodity[i].trademargingap.to_d)
-   #@exchtrademargin[i]=@exchtrademargin[i].to_d
-   #@exchtrademargin[i]=@exchtrademargin[i]+@usercommodity[i]
-   end
 end
 
   def  tradechargefast
