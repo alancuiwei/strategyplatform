@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<g_XMLfile>
+   <coredata>
+	  <startdate>2011-11-28</startdate>
+	  <enddate>2013-02-15</enddate>
+   </coredata>
+   <g_strategyparams>
+	  <period>4</period>
+	  <losses>10</losses>
+	  <wins>10</wins>
+   </g_strategyparams>
+  <adjustparams>
+    <period>3:2:10</period>
+ 	  <losses>3:2:10</losses>
+ 	  <wins>3:2:10</wins>
+  <item>a-a</item></adjustparams>
+  <optimizedmethod>1</optimizedmethod>
+   <g_commoditynames/>
+   <g_pairnames/>
+   <g_contractnames/>
+   <strategyid>010603</strategyid>
+   <path>D:\Users\Administrator\Documents\MATLAB\Test\tester1\010603\</path>
+   <strategypath>D:\Users\Administrator\Documents\MATLAB\ZR_LIB_0220\ZR_LIB\</strategypath>
+   <isupdated>0</isupdated>
+   <userid>1</userid>
+   <objecttype>future</objecttype>
+   <resulttype>xml</resulttype>
+</g_XMLfile>

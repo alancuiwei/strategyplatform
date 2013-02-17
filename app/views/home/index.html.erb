@@ -165,8 +165,7 @@
             <% else %>
 
             <p>年收益率：<%=  format("%.3f",@hash_reference[strategyweb.strategyid.to_s+strategyweb.userid.to_s+strategyweb.ordernum.to_s][2]*100) %>% </p>
-<!--            <p>最大回退金额：</p><p><%=  @hash_reference[strategyweb.strategyid.to_s+strategyweb.userid.to_s+strategyweb.ordernum.to_s][0] %> </p>
-            <p>胜率：</p><p><%=  format("%.3f",@hash_reference[strategyweb.strategyid.to_s+strategyweb.userid.to_s+strategyweb.ordernum.to_s][1]) %></p>  -->
+
             <% end %>
 
             <p>更新时间：</p><p><%=  strategyweb.updated_at.to_s(:stamp) %></p>
@@ -193,6 +192,7 @@
        $('.quicklink_instance>a').css("float","left");
        $('.quicklink_instance>img').css("float","left");
    });
+
   function show_version(){
     $(document).ready(function(){
       var title = '<table><tr><th>current_version_id</th><th>current_comments</th><th>update_date</th></tr>'+

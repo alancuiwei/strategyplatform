@@ -22,16 +22,16 @@
         if(iWidth==99){
             clearInterval(timer); //停止执行
            }
-    },1200); //每过20毫秒，执行函数
+    },10); //每过20毫秒，执行函数
     filecheck();
   function filecheck(){
     $.get("<%=params[:id]%>",{wait:1},function(data,status){
         if(data=="error"){
-            setTimeout(filecheck,2000);
+            location.href="/strategys_combine/opmed_rps";
         }
         else{
             if(data=='<%= @firstdata%>')
-                setTimeout(filecheck,2000);
+                location.href="/strategys_combine/opmed_rps";
             else
           <%if params[:stgtype]!="d"%>
                 location.href="/strategys_combine/opmed_rps";

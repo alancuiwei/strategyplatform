@@ -61,10 +61,10 @@
 </script>
 <div id="customer_trade">
 </div>
-<!--
+
 <div id="showchart">
 </div>
--->
+
 <br />
 <!-- <h2>个性化交易 - 无风险套利 </h2> -->
     <div id="showtime"></div>
@@ -76,7 +76,7 @@
     <div id="rtpricetable_user"></div>
 <% end %>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
+<!--
 <script type="text/javascript">
     var Sys = {};
     var ua = navigator.userAgent.toLowerCase();
@@ -139,6 +139,7 @@
                         "</svg>"
     }
 </script>
+-->
 <script type="text/javascript">
     //table data storage (2D array)
     var tabledata_user= new Array([0,0,0,0,0,0]);
@@ -178,6 +179,7 @@
                 hash_isorder_opshow.add(data[i].pairname,1)
             }
         } );
+        location.reload();
         //alert("套利合约对名："+name+" .最新价差："+hash_post.items(s)[1])
     }
     function  myclick_post_s(s)
